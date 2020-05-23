@@ -1,9 +1,7 @@
-/*jslint browser:true */
-
 $(document).ready(function() {
   $("#navbar").load("navbar.html");
   $("#footer").load("../src/footer.html");
-  changeSlide(1);
+  $("#carousel").load("../src/new.html");  
 });
 
 let show_list = false;
@@ -48,40 +46,3 @@ function showMenu()
 
   mobile_menu.classList.remove("hidden");        
 }
-
-function changeSlide(slide)
-{ 
-  let first_button = document.getElementById('first-button');
-  let second_button = document.getElementById('second-button');
-  let third_button = document.getElementById('third-button');    
-
-  console.log(first_button);
-
-
-
-  let first_slide = document.getElementById('first-slide');
-  let second_slide = document.getElementById('second-slide');
-  let third_slide = document.getElementById('third-slide');  
-
-  switch(slide)
-  {
-    case 1:
-      console.log(first_button);      
-      first_slide.classList.remove('hidden');
-      second_slide.classList.add('hidden');
-      third_slide.classList.add('hidden');
-    break;
-    case 2:
-      first_slide.classList.add('hidden');
-      second_slide.classList.remove('hidden');
-      third_slide.classList.add('hidden');
-    break;
-    case 3:
-      first_slide.classList.add('hidden');
-      second_slide.classList.add('hidden');
-      third_slide.classList.remove('hidden');          
-    break;        
-      
-  }
-}
-
