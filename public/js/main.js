@@ -3,6 +3,7 @@ $(document).ready(function() {
   $("#footer").load("../src/footer.html");
   $("#carousel").load("../src/carousel.html");  
   $("#testimonials").load("../src/testimonial.html");
+  showProductAlert();
 });
 
 let show_list = false;
@@ -46,4 +47,22 @@ function showMenu()
   let mobile_menu = document.getElementById("mobile-menu");  
 
   mobile_menu.classList.remove("hidden");        
+}
+
+function showProductAlert()
+{
+  setInterval(() => {
+
+    let product_alert = document.getElementById("new-product-alert");
+
+    product_alert.classList.remove("hidden");    
+    
+  }, 20000);
+}
+
+function closeProductAlert()
+{
+  let product_alert = document.getElementById("new-product-alert");
+
+  product_alert.classList.add("hidden");  
 }
