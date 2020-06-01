@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("#navbar").load("navbar.html");
   $("#footer").load("../src/footer.html");
   $("#carousel").load("../src/carousel.html");  
+  $("#testimonials").load("../src/testimonial.html");
 });
 
 let show_list = false;
