@@ -76,6 +76,8 @@ function getCurrentPage()
   let page = page_url[0].split('.')[0];
   page = String(page);
 
+  if(page == "contact") return true;
+
   if(page == "decontamination" || page == "sensors")
   {
     page = "product";
