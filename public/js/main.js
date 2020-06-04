@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $("#covid-news").load("../src/covid-news.html");  
   $("#navbar").load("navbar.html");
   $("#footer").load("../src/footer.html");
   $("#carousel").load("../src/carousel.html");  
@@ -51,13 +52,13 @@ function showMenu()
 
 function showProductAlert()
 {
-  setInterval(() => {
+  // setInterval(() => {
 
-    let product_alert = document.getElementById("new-product-alert");
+  //   let product_alert = document.getElementById("new-product-alert");
 
-    product_alert.classList.remove("hidden");    
+  //   product_alert.classList.remove("hidden");    
     
-  }, 20000);
+  // }, 20000);
 }
 
 function closeProductAlert()
