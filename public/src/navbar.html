@@ -28,15 +28,15 @@
           </div>
           <!-- end burger button -->
           <nav class="hidden md:flex space-x-4 items-end pr-16">
-            <a href="home.html" class="text-md leading-6 font-normal text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 hover:no-underline">
+            <a id="home" href="home.html" class="text-md leading-6 font-normal text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 hover:no-underline">
               Home
             </a>             
-            <a href="about.html" class="text-md leading-6 font-normal text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 hover:no-underline">
+            <a id="about" href="about.html" class="text-md leading-6 font-normal text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 hover:no-underline">
               About Us
             </a>
             <div class="relative">
               <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-              <button onclick="showProducts()" type="button" class="text-gray-500 inline-flex items-center space-x-2 text-md leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+              <button id="product" onclick="showProducts()" type="button" class="text-gray-500 inline-flex items-center space-x-2 text-md leading-6 font-normal hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
                 <span>Products</span>
                 <!-- Item active: "text-gray-600", Item inactive: "text-gray-400" -->
                 <svg class="text-gray-400 h-5 w-5 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150" fill="currentColor" viewBox="0 0 20 20">
@@ -48,7 +48,7 @@
                 <div class="rounded-lg shadow-lg">
                   <div class="rounded-lg shadow-xs overflow-hidden">
                     <div class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                      <a href="#" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 hover:no-underline">
+                      <a id="sensors" href="#" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 hover:no-underline">
                         <svg class="-rotate-90 h-6 w-6 transform" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
@@ -61,7 +61,7 @@
                           </p>
                         </div>
                       </a>
-                      <a href="decontamination.html" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 hover:no-underline">
+                      <a id="decontamination" href="decontamination.html" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 hover:no-underline">
                         <svg class="-rotate-90 h-6 w-6 transform" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
@@ -82,10 +82,10 @@
             <a href="#" class="text-md leading-6 font-normal text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 hover:no-underline">
               Why us?
             </a>     
-            <a href="faq.html" class="text-md leading-6 font-normal text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 hover:no-underline pr-2">
+            <a id="faq" href="faq.html" class="text-md leading-6 font-normal text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 hover:no-underline pr-2">
               Faq
             </a>   
-            <a href="contact.html" class="ml-12 inline-flex items-center bg-blue-200 mx-2 rounded-md py-1  px-2 border-b-2 border-transparent text-md font-medium leading-5 text-blue-500 hover:bg-blue-100 transition duration-150 ease-in-out hover:no-underline">
+            <a id="contact" href="contact.html" class="ml-12 inline-flex items-center bg-blue-200 mx-2 rounded-md py-1  px-2 border-b-2 border-transparent text-md font-medium leading-5 text-blue-500 hover:bg-blue-100 transition duration-150 ease-in-out hover:no-underline">
               Contact Us
             </a>        
           </nav>
@@ -95,7 +95,7 @@
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
         <div class="rounded-lg shadow-lg">
-          <div class="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
+          <div class="rounded-lg shadow-console.logxs bg-white divide-y-2 divide-gray-50">
             <div class="pt-5 pb-6 px-5 space-y-6">
               <div class="flex items-center justify-between">
                 <div>
@@ -157,8 +157,6 @@
           </div>
         </div>
       </div>
-    </div>    
-    
-
+    </div>      
   </body>
 </html>

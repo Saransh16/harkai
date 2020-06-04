@@ -1,11 +1,12 @@
-$(document).ready(function() {
+window.onload = function() {
   $("#covid-news").load("../src/covid-news.html");  
   $("#navbar").load("navbar.html");
   $("#footer").load("../src/footer.html");
   $("#carousel").load("../src/carousel.html");  
   $("#testimonials").load("../src/testimonial.html");
   showProductAlert();
-});
+  getCurrentPage();
+};
 
 let show_list = false;
 let hide_mobile_menu = true;
@@ -52,6 +53,7 @@ function showMenu()
 
 function showProductAlert()
 {
+  console.log("hello");
   // setInterval(() => {
 
   //   let product_alert = document.getElementById("new-product-alert");
@@ -66,4 +68,26 @@ function closeProductAlert()
   let product_alert = document.getElementById("new-product-alert");
 
   product_alert.classList.add("hidden");  
+}
+
+function getCurrentPage()
+{
+  let page_url = location.pathname.split("/").slice(-1)
+  let page = page_url[0].split('.')[0];
+  page = String(page);
+
+  if(page == "decontamination" || page == "sensors")
+  {
+    page = "product";
+  }
+
+  setTimeout(() => {
+
+    let nav_item = document.getElementById(page);
+    nav_item.classList.add('text-gray-800');
+    nav_item.classList.add('border-b-2');
+    nav_item.classList.add('border-blue-300');    
+    
+  }, 1000);
+
 }
